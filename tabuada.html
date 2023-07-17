@@ -1,0 +1,25 @@
+<html>
+    <script>
+        
+        //Função criada para pular uma linha
+        function pulaLinha(){
+        document.write("<br>");
+        }
+
+        function mostra(texto){
+            document.write(texto);
+            pulaLinha();
+        }
+        var multiplicador = 1
+        var numeroTabuada = parseInt(prompt("Deseja ver o resultado da tabuada de qual número?"));
+      
+        mostra("Tabuada do número " + numeroTabuada);
+        mostra("-------------------------------------");
+        while (multiplicador <= 10) {
+            mostra( numeroTabuada + " x " + multiplicador + " = " + (numeroTabuada * multiplicador));
+            multiplicador++;
+        }
+        
+       
+    </script>
+</html>
